@@ -1,0 +1,13 @@
+{
+    "name": "job-matching/app",
+    "description": "PHP backend for the job matching platform",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
