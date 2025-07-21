@@ -10,15 +10,6 @@ use App\Controllers\MessageController;
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = $_SERVER['REQUEST_METHOD'];
 
-// Serve the HTML interface when visiting the root from a browser
-if ($method === 'GET' && ($uri === '/' || $uri === '/index.html')) {
-    $accept = $_SERVER['HTTP_ACCEPT'] ?? '';
-    if (str_contains($accept, 'text/html') && file_exists(__DIR__ . '/index.html')) {
-        header('Content-Type: text/html');
-        readfile(__DIR__ . '/index.html');
-        return;
-    }
-}
 
 header('Content-Type: application/json');
 
