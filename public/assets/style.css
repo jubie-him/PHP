@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1d1d1d, #333);
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #111;
+    padding: 1rem;
+    text-align: center;
+    color: #0ff;
+}
+nav button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #0ff;
+    border: none;
+    color: #111;
+    cursor: pointer;
+    border-radius: 4px;
+}
+nav button:hover {
+    background: #0cc;
+}
+main {
+    padding: 2rem;
+}
+section {
+    display: none;
+    max-width: 600px;
+    margin: auto;
+}
+section.active {
+    display: block;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+input, textarea, select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+}
+button[type="submit"] {
+    background: #0ff;
+    color: #111;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+button[type="submit"]:hover {
+    background: #0cc;
+}
+pre.response {
+    background: #222;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow: auto;
+}
